@@ -27,11 +27,11 @@ This project is a full-stack CRUD application demonstrating the integration of S
 
 - **Backend:**
   - Spring Boot (Java)
+  - Express.js (Node.js)
   - JWT for authentication
   - Relational Database (e.g., MySQL, PostgreSQL)
 
 - **Frontend:**
-  - Express.js (Node.js) for Node.js version
   - Angular for Angular version
   - Vue for Vue.js version
   - React for React version
