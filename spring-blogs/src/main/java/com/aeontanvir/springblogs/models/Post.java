@@ -19,7 +19,17 @@ public class Post extends BaseModel {
     private Long id;
     private String title;
     private String details;
-    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "post", cascade = CascadeType.PERSIST)
     private List<Comment> comments;
 
+    public Post(String title, String details) {
+        this.title = title;
+        this.details = details;
+    }
+
+    public Post(String title, String details, List<Comment> comments) {
+        this.title = title;
+        this.details = details;
+        this.comments = comments;
+    }
 }

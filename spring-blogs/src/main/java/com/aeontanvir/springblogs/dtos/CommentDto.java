@@ -12,5 +12,4 @@ import lombok.NoArgsConstructor;
 public class CommentDto {
     private Long id;
     private String comment;
-    private PostDto post;
 }

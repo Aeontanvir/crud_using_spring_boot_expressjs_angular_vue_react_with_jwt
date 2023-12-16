@@ -20,4 +20,11 @@ public class Comment  extends BaseModel{
     @JoinColumn(name = "post_id")
     private Post post;
 
+    public Comment(String comment, Post post) {
+        this.comment = comment;
+        this.post = post;
+    }
+    public Comment(String comment) {
+        this.comment = comment;
+    }
 }

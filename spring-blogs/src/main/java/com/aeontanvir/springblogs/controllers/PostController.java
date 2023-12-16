@@ -15,7 +15,7 @@ import java.util.List;
 public class PostController {
     private final PostService postService;
 
-    @GetMapping
+    @GetMapping("")
     public ResponseEntity<ApiResponse<List<PostDto>>> getAll() {
         return ResponseEntity.ok(ApiResponse.success("All Post List", postService.getAll()));
     }
